@@ -50,4 +50,6 @@ jacocoTestReport {
 
 checkstyle {
     toolVersion '9.2.1'
+    configFile = rootProject.file("config/checkstyle.xml")
+    configProperties = ["suppressionFile": rootProject.file('config/suppressions.xml')]
 }
